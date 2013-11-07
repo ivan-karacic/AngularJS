@@ -1,0 +1,13 @@
+﻿[
+	{ "label" : "Tenant", "id" : "role1", "children" : [
+		{ "label" : "Unit1", "id" : "role11", "children" : [] },
+		{ "label" : "Unit2", "id" : "role12", "children" : [
+			{ "label" : "Team1", "id" : "role121", "children" : [
+				{ "label" : "Member1", "id" : "role1211", "children" : [] },
+				{ "label" : "Member2", "id" : "role1212", "children" : [] }
+			]}
+		]}
+	]},
+	{ "label" : "Admin", "id" : "role2", "children" : [] },
+	{ "label" : "User", "id" : "role3", "children" : [] }
+]

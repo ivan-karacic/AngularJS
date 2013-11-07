@@ -1,0 +1,61 @@
+﻿<!-- Navigation bar -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Assets</a></li>
+                <li><a href="#">Roles</a></li>
+                <li><a href="#">Recorders</a></li>
+                <li><a href="#">Import Users</a></li>
+                <li><a href="#">Schedule</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2 right-border">
+        <div class="col-md-6">
+            Name:<br />
+            Code:<br />
+            CustomerID:<br />
+            Customer:<br />
+            IsActive:<br />
+            Maximum Users:<br />
+            Expiry Date:<br />
+            IsDeleted:
+        </div>
+        <div class="col-md-6" ng-repeat="t in tenant">
+            {{t.name}}<br />
+            {{t.code}}<br />
+            {{t.customer-id}}<br />
+            {{t.customer}}<br />
+            {{t.isActive}}<br />
+            {{t.maximum-users}}<br />
+            {{t.expiry-date}}<br />
+            {{t.isDeleted}}
+        </div>
+
+        <button type="button" class="btn btn-info" id="edit-btn">Edit</button>
+    </div>
+
+    <div class="col-md-10">
+
+    </div>
+</div>
+
+<div data-angular-treeview="true"
+     data-tree-id="abc"
+     data-tree-model="treedata"
+     data-node-id="id"
+     data-node-label="label"
+     data-node-children="children">
+</div>
